@@ -19,7 +19,6 @@ public class Main {
         funcionario.cpf = 12345678901L;
         funcionario.salario = 3000.00;
         // funcionario.apresentar();
-        
 
         Professor professor = new Professor(null, 0, 0, 0);
         professor.nome = "Professor 1";
@@ -28,7 +27,6 @@ public class Main {
         professor.numeroDeAulas = 10;
         professor.novoSalario(5500.00, 2); // Sobrecarga de método
         // professor.apresentar();
-        
 
         Faxineiro faxineiro = new Faxineiro(null, 0, 0, 0);
         faxineiro.nome = "Faxineiro 1";
@@ -43,12 +41,19 @@ public class Main {
         listaDaEscola.add(funcionario);
         listaDaEscola.add(professor);
         listaDaEscola.add(faxineiro);
-        
+
+        //POLIMORFISMO
         for (Pessoa pessoa : listaDaEscola) {
             pessoa.apresentar();
-        }
 
-        
+           
+            // Polimorfismo do tipo downcasting
+            if (pessoa instanceof Professor) {
+                System.out.println("O número de aulas do professor é: " + ((Professor) pessoa).numeroDeAulas);
+
+            }
+
+        }
 
     }
 }
