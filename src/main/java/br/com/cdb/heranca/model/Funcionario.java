@@ -9,5 +9,10 @@ public class Funcionario extends Pessoa {
         this.salario = salario;
 
     }
+     // SOBRESCRITA DE MÉTODOS
+    @Override
+    public void apresentar() {
+        System.out.println("Olá, eu sou o funcionário: " + nome);
+    }
 
 }

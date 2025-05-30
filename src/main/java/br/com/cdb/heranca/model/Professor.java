@@ -17,4 +17,10 @@ public class Professor extends Funcionario {
         this.numeroDeAulas += nAulasAdicionais;
     }
     
+     // SOBRESCRITA DE MÉTODOS
+    @Override
+    public void apresentar() {
+        System.out.println("Olá, eu sou o professor: " + nome);
+    }
+    
 }

@@ -10,12 +10,14 @@ public class Main {
 
         Aluno aluno1 = new Aluno(null, 0, 0);
         aluno1.nome = "Aluno 1";
+        aluno1.apresentar();
 
         Funcionario funcionario = new Funcionario(null, 0, 0);
         funcionario.nome = "Funcionário 1";
         funcionario.cpf = 12345678901L;
         funcionario.salario = 3000.00;
-        System.out.println("Nome do funcionário: " + funcionario.nome);
+        funcionario.apresentar();
+        
 
         Professor professor = new Professor(null, 0, 0, 0);
         professor.nome = "Professor 1";
@@ -23,16 +25,16 @@ public class Main {
         professor.salario = 5000.00;
         professor.numeroDeAulas = 10;
         professor.novoSalario(5500.00, 2); // Sobrecarga de método
-        System.out.println(" O professor: " + professor.nome +
-                " tem um novo salário de: " + professor.salario +
-                " e agora tem: " + professor.numeroDeAulas + " aulas.");
+        professor.apresentar();
+        
 
         Faxineiro faxineiro = new Faxineiro(null, 0, 0, 0);
         faxineiro.nome = "Faxineiro 1";
         faxineiro.cpf = 12345678901L;
         faxineiro.salario = 2000.00;
         faxineiro.turno = 1;
-        System.out.println("Nome do faxineiro: " + faxineiro.nome);
+        faxineiro.apresentar();
+        
 
     }
 }

@@ -7,5 +7,10 @@ public class Faxineiro extends Funcionario {
         super(nome, cpf, salario);
         this.turno = turno;
     }
+     // SOBRESCRITA DE MÉTODOS
+    @Override
+    public void apresentar() {
+        System.out.println("Olá, eu sou o faxineiro: " + nome);
+    }
     
 }
