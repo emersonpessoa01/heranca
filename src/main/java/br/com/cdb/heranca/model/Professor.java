@@ -7,5 +7,14 @@ public class Professor extends Funcionario {
         super(nome, cpf, salario);
         this.numeroDeAulas = numeroDeAulas;
     }
+
+    //SOBRECARGA DE MÉTODOS
+    public void novoSalario(double novoSalario) {
+        this.salario = novoSalario;
+    }
+    public void novoSalario(double novoSalario, int nAulasAdicionais) {
+        this.salario = novoSalario;
+        this.numeroDeAulas += nAulasAdicionais;
+    }
     
 }
