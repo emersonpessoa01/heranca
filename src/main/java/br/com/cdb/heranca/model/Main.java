@@ -7,6 +7,18 @@ public class Main {
        fulano.cpf = 12345678901L;
 
        fulano.apresentar();
+
+       Aluno aluno1 = new Aluno(null, 0, 0);
+        aluno1.nome = "Aluno 1";
+
+        Funcionario funcionario = new Funcionario(null, 0, 0);
+        funcionario.nome = "Funcionário 1";
+
+        Professor professor = new Professor(null, 0, 0, 0);
+        professor.nome = "Professor 1";
+        professor.cpf = 12345678901L;
+        professor.salario = 5000.00;
+        professor.numeroDeAulas = 10;
         
     }
 }
