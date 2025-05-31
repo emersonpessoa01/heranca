@@ -8,9 +8,11 @@ public class Main {
         fulano.nome = "Fulano";
         fulano.cpf = 12345678901L;
         // fulano.apresentar();
+        System.out.println(fulano);
 
         Aluno aluno1 = new Aluno(null, 123456789, 123);
         aluno1.nome = "Aluno 1";
+        System.out.println(aluno1);
 
         // aluno1.apresentar();
 

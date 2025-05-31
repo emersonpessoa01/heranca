@@ -9,8 +9,13 @@ public class Pessoa {
         this.cpf = cpf;
     }
 
-    
     void apresentar() {
         System.out.println("Olá, meu nome é: " + nome + ", CPF: " + cpf);
+    }
+
+    // SOBRESCRITA DE MÉTODOS
+    @Override
+    public String toString() {
+        return this.nome +" - " + this.cpf;
     }
 }
