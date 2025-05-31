@@ -4,15 +4,16 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Pessoa fulano = new Pessoa(null, 0);
-        fulano.nome = "Fulano";
-        fulano.cpf = 12345678901L;
+        // Exemplo de toString
+        // Pessoa fulano = new Pessoa(null, 0);
+        // System.out.println(fulano);
+        // fulano.nome = "Fulano";
+        // fulano.cpf = 12345678901L;
         // fulano.apresentar();
-        System.out.println(fulano);
 
         Aluno aluno1 = new Aluno(null, 123456789, 123);
         aluno1.nome = "Aluno 1";
-        System.out.println(aluno1);
+        System.out.println(aluno1); // Exemplo de toString
 
         // aluno1.apresentar();
 
@@ -38,7 +39,7 @@ public class Main {
         // faxineiro.apresentar();
 
         ArrayList<Pessoa> listaDaEscola = new ArrayList<>();
-        listaDaEscola.add(fulano);
+        // listaDaEscola.add(fulano);
         listaDaEscola.add(aluno1);
         listaDaEscola.add(funcionario);
         listaDaEscola.add(professor);

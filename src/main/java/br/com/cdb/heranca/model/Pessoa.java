@@ -1,6 +1,8 @@
 package br.com.cdb.heranca.model;
 
-public class Pessoa {
+// Classe abstrata Pessoa não pode ser instanciada diretamente,
+// mas pode ser estendida por outras classes como Aluno, Funcionario, etc.
+public abstract class Pessoa {
     public String nome;
     public long cpf;
 
@@ -9,9 +11,7 @@ public class Pessoa {
         this.cpf = cpf;
     }
 
-    void apresentar() {
-        System.out.println("Olá, meu nome é: " + nome + ", CPF: " + cpf);
-    }
+    public abstract void apresentar();
 
     // SOBRESCRITA DE MÉTODOS
     @Override
