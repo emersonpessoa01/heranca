@@ -7,11 +7,11 @@ public class Main {
         Pessoa fulano = new Pessoa(null, 0);
         fulano.nome = "Fulano";
         fulano.cpf = 12345678901L;
+        // fulano.apresentar();
 
-        fulano.apresentar();
-
-        Aluno aluno1 = new Aluno(null, 0, 0);
+        Aluno aluno1 = new Aluno(null, 123456789, 123);
         aluno1.nome = "Aluno 1";
+
         // aluno1.apresentar();
 
         Funcionario funcionario = new Funcionario(null, 0, 0);
@@ -42,15 +42,13 @@ public class Main {
         listaDaEscola.add(professor);
         listaDaEscola.add(faxineiro);
 
-        //POLIMORFISMO
+        // POLIMORFISMO
         for (Pessoa pessoa : listaDaEscola) {
             pessoa.apresentar();
 
-           
             // Polimorfismo do tipo downcasting
             if (pessoa instanceof Professor) {
-                System.out.println("O número de aulas do professor é: " + ((Professor) pessoa).numeroDeAulas);
-
+                System.out.println("O número de aulas do professor é; " + ((Professor) pessoa).numeroDeAulas);
             }
 
         }

@@ -7,13 +7,11 @@ public class Aluno extends Pessoa {
         super(nome, cpf);
         this.numeroMatricula = numeroMatricula;
     }
-    
+
     // SOBRESCRITA DE MÉTODOS
     @Override
     public void apresentar() {
         System.out.println("Olá, eu sou o aluno: " + nome + " e minha matrícula é: " + numeroMatricula);
     }
-
-    
 
 }
